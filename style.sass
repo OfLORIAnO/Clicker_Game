@@ -1,0 +1,219 @@
+.title
+    text-align: center
+body
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase
+    background-color: #fdffe6
+.container
+    font-size: 24px
+    font-weight: 700
+
+
+.main__header
+
+    .container
+        z-index: 1
+        height: 50px
+        box-shadow: 0px 0px 10px black
+        background-color: #effd72
+        padding-top: 13px
+        .header__in
+            width: 500px
+            margin-left: auto
+            margin-right: auto
+            background-color:   
+            display: flex
+            justify-content: space-around
+            .header__link
+                color: black
+                &:hover
+                    color: rgba(0, 0, 0, .8)
+            .header__link
+                .header-ul
+                    transition-duration: .9s
+                    #balance
+                        transition-duration: .9s
+.main__game-screen
+    button
+        margin-left: 50px
+        width: 100px
+        height: 100px
+    .container
+        margin-top: 25px
+        padding-top: 50px
+        padding-bottom: 100px
+        z-index: 0
+        height: 700px
+        background-color: #F5FFB4
+        box-shadow: 0px 0px 6px black
+        display: flex
+        justify-content: space-around
+        align-items: center
+        .shop
+            font-size: 18px
+            background-color: #F2CC74
+            box-shadow: 0px 0px 10px #000000
+            border-radius: 20px
+            width: 350px
+            .shop-out
+                width: 340px
+                background-color: #C9A95F
+                box-shadow: inset 0px 0px 10px #000000
+                margin-right: auto
+                margin-left: auto
+                border-radius: 10px
+                .shop-inner
+                    padding-bottom: 25px
+                    height: 100%
+                    width: 100%
+                    border-radius: 20px
+                    &::-webkit-scrollbar
+                        background-color: #C8A962
+                        color: #F2CC74
+                        width: 10px
+                        border-radius: 20px
+                    &::-webkit-scrollbar-thumb
+                        border-radius: 20px
+                        background-color: #C9A95F
+                        box-shadow: inset 0px 0px 6px rgba(242, 204, 116, .9)
+                    &::-webkit-scrollbar-track
+                        border-radius: 20px
+                        -webkit-box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.9) inset;
+                        background-color: #C8A962
+                    &::-webkit-scrollbar-button
+                        display: none
+                    .weapon
+                        background-color: #F5FFB4
+                        font-size: 12px
+                        width: 90%
+                        height: 75px
+                        margin: 0 auto
+                        border: 2px solid #000000
+                        border-radius: 15px
+                        margin-top: 25px
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        transition-duration: .4s
+                        &:hover
+                            box-shadow: 0px 0px 5px #000000
+                        img
+                            width: 75px
+                            height: 100%
+                            border-right: 2px solid #000000
+                            border-radius: 15px
+                        .shop_info
+                            padding-left: 5px
+                            width: 160px
+                            height: 55px
+                            margin-top: 10px
+                            display: flex
+                            flex-direction: column
+                            justify-content: space-between
+                        .title-weapon
+                            font-weight: 700
+                            font-size: 15px
+                            text-align: center
+                        .button_buy
+                            background-color: #C9A95F
+                            color: #000000
+                            margin-right: 10px
+                            border-radius: 10px
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            width: 50px
+                            height: 45px
+                            border: 2px solid #000000
+                            box-shadow: 0px 5px 0px #000000
+                            transition-duration: .3s
+                            &:hover
+                                background-color: #000000
+                                cursor: pointer
+                                color: gold
+                                border: 2px solid gold
+                                margin-top: 10px
+                                box-shadow: 0px 0px 0px #000000
+            .shop-title
+                color: 
+                margin-top: 15px
+                font-size: 25px
+                padding-bottom: 15px
+        .status-info
+            padding: 15px
+            border: 2px solid #000000
+            border-radius: 15px
+            .li
+                display: flex
+                flex-direction: column
+                .ul
+                    text-align: center
+                    font-size: 25px
+                    display: flex
+                    #weapon_damage
+                    #weapon__info
+        .monster-out
+            width: 230px
+            .monster
+                transform-origin: center center
+                transform: rotate(0deg)
+                transition-duration: .5s
+                animation-duration: .5s
+                width: 200px
+                height: 500px
+                text-align: center        
+                border-radius: 15px
+                &:hover
+                    cursor: pointer
+                .monster-info
+                    transition-duration: .2s
+                    margin-top: 3px
+                    margin-bottom: 5px
+                    span
+                        text-decoration: underline
+                #monster_img
+                    border-radius: 30px                
+                    border: 2px solid #000000
+                    transition-duration: .1s
+                    animation-duration: .1s
+                    height: 340px
+                    width: calc( 100% + 1px)
+                    background-image: url('img/b1.png')
+                    background-repeat: no-repeat
+                    &:hover
+                        box-shadow: 0px 0px 10px red
+                #boss_hp
+                    width: 80%
+                    height: 40px
+                    border: 2px solid #000000
+                    margin-left: auto
+                    margin-right: auto
+                    border-radius: 15px
+                    font-size: 15px
+                    .boss_hp_line
+                        transition-duration: .1s
+                        width: 100%
+                        height: 36px
+                        background-color: red
+                        text-align: center
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        border-radius: 13px
+                        overflow: hidden
+                        margin-bottom: -30px
+
+#takeCoins
+    padding: 8px
+    width: 130px
+    height: 70px
+    margin-top: 20px
+    border: 2px solid #000
+    border-radius: 25px
+    background-color: #FF3838
+    transition-duration: .4s
+    box-shadow: 0px 10px 0px #000000 
+    &:hover
+        background-color: #FF0000
+        box-shadow: 0px 0px 0px #000000
+        margin-top: 30px

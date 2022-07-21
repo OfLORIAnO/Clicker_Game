@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Облачный шутер с элементами РПГ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main__header">
+            <div class="container">
+                    <div class="header__in">
+                        <a class="header__link" href="">
+                            <div class="header-ul">Баланс: <span id="balance">10</span></div>
+                        </a>
+                    </div>
+            </div>
+        </div>
+        <div class="main__game-screen">
+            <div class="container">
+                <div class="monster-out">
+                    <div class="monster" id="monster">
+                        <div class="monster-info">
+                            Босс <span id="monster_lvl">1</span> Уровня
+                        </div>
+                        <div id="monster_img" class="monster_img">
+                            <img id="monster-img_changer" src="" alt="">
+                        </div>
+                        <img src="" alt="" id="pic_monster">
+                        <div id="boss_hp">
+                            <div id="boss_hp_line" class="boss_hp_line"></div>
+                            <span id="boss_hp_curent">20</span>/<span id="boss_hp_max">20</span>
+                        </div>
+                    </div>
+                </div>
+                    <div class="status-info">
+                        <div class="li">
+                            <div class="ul">Оружие: <div id="weapon__info_name"> Бронзовый меч</div></div>
+                            <div class="ul">Урон: <div id="weapon_damage">1</div></div>
+                        </div>
+                    </div>  
+                
+                <div class="shop">
+                    <div class="shop-title title">МАГАЗИН</div>
+                    <div class="shop-out">
+                        <div class="shop-inner">
+                            <div class="weapon">
+                                <img src="img/s1.png" alt="" id="img_1">
+                                <div class="shop_info">
+                                    <div class="shop-titles title-weapon">Стальной меч</div>
+                                    <div class="shop-titles damage-weapon">Урон: 10</div>
+                                    <div class="shop-titles price-weapon">Стоимость: 100</div>
+                                </div>
+                                <div class="button_buy" id="button1" onclick="buy_weapon_weapon_steel_sword()">Купить</div>
+                            </div>
+                            <div class="weapon">
+                                <img src="img/s2.png" alt="" id="img_2">
+                                <div class="shop_info">
+                                    <div class="shop-titles title-weapon">Серебрянный меч</div>
+                                    <div class="shop-titles damage-weapon">Урон: 100</div>
+                                    <div class="shop-titles price-weapon">Стоимость: 1000</div>
+                                </div>
+                                <div class="button_buy" id="button2" onclick="buy_weapon_silver_sword()">Купить</div>
+                            </div>
+                            <div class="weapon">
+                                <img src="img/s3.png" alt="" id="img_3">
+                                <div class="shop_info">
+                                    <div class="shop-titles title-weapon">Волшебный посох-1</div>
+                                    <div class="shop-titles damage-weapon">Урон: 500</div>
+                                    <div class="shop-titles price-weapon">Стоимость: 4000</div>
+                                </div>
+                                <div class="button_buy" id="button3" onclick="buy_weapon_magic_staffI()">Купить</div>
+                            </div>
+                            <div class="weapon">
+                                <img src="img/s4.png" alt="" id="img_4">
+                                <div class="shop_info">
+                                    <div class="shop-titles title-weapon">Волшебный посох-2</div>
+                                    <div class="shop-titles damage-weapon">Урон: 5000</div>
+                                    <div class="shop-titles price-weapon">Стоимость: 10000</div>
+                                </div>
+                                <div class="button_buy" id="button4" onclick="buy_weapon_magic_staffII()">Купить</div>
+                            </div>
+                            <div class="weapon">
+                                <img src="img/s5.png" alt="" id="img_5">
+                                <div class="shop_info">
+                                    <div class="shop-titles title-weapon">Огненный меч</div>
+                                    <div class="shop-titles damage-weapon">Урон: 15000</div>
+                                    <div class="shop-titles price-weapon">Стоимость: 25000</div>
+                                </div>
+                                <div class="button_buy" id="button5" onclick="buy_weapon_fire_sword()">Купить</div>
+                            </div>
+                            <div class="weapon">
+                                <img src="img/s6.png" alt="" id="img_6">
+                                <div class="shop_info">
+                                    <div class="shop-titles title-weapon">Божественный меч</div>
+                                    <div class="shop-titles damage-weapon">Урон: 50000</div>
+                                    <div class="shop-titles price-weapon">Стоимость: 50000</div>
+                                </div>
+                                <div class="button_buy" id="button6" onclick="buy_weapon_divine_sword()">Купить</div>
+                            </div>
+                            <div class="weapon">
+                                <img src="img/s7.png" alt="" id="img_7">
+                                <div class="shop_info">
+                                    <div class="shop-titles title-weapon">Тёмный меч</div>
+                                    <div class="shop-titles damage-weapon">Урон: 100000</div>
+                                    <div class="shop-titles price-weapon">Стоимость: 100000</div>
+                                </div>
+                                <div class="button_buy" id="button7" onclick="buy_weapon_dark_sword()">Купить</div>
+                            </div>
+                            <div class="weapon">
+                                <img src="img/s9.png" alt="" id="img_9">
+                                <div class="shop_info">
+                                    <div class="shop-titles title-weapon">Магичнский посах бога-I</div>
+                                    <div class="shop-titles damage-weapon">Урон: 1000000</div>
+                                    <div class="shop-titles price-weapon">Стоимость: 750000</div>
+                                </div>
+                                <div class="button_buy" id="button9" onclick="buy_gods_magical_staffI()">Купить</div>
+                            </div>
+                            <div class="weapon">
+                                <img src="img/s10.png" alt="" id="img_10">
+                                <div class="shop_info">
+                                    <div class="shop-titles title-weapon">Оружие мироздания</div>
+                                    <div class="shop-titles damage-weapon">Урон: 10000000</div>
+                                    <div class="shop-titles price-weapon">Стоимость: 10000000</div>
+                                </div>
+                                <div class="button_buy" id="button10" onclick="buy_weapon_of_the_universe()">Купить</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="main__footer">
+            <div class="container">
+                <button id="takeCoins" onclick="getmoney()" class="bottom_text">Получить монеты для бета теста</button>
+            </div>
+        </div>
+
+    </div>  
+    <script src="main.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+</body>
+</html>

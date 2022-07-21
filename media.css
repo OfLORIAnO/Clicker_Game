@@ -1,0 +1,91 @@
+@media (max-width:4000px) {
+    .shop{
+        height: 580px;
+        padding-bottom: 20px
+    }
+    .shop-inner{
+        overflow: auto
+    }
+    .shop-out{
+        height: 87%;
+    }
+}
+@media (max-width:1170px) {
+    .container{
+        max-width:970px;
+    }
+    .main__game-screen .container{
+        flex-direction: row;
+    }
+    .shop{
+        height: 580px;
+        padding-bottom: 20px;
+    }
+    .shop-inner{
+        overflow: auto
+    }
+    .shop-out{
+        height: 87%;
+    }
+}
+@media (max-width:992px) {
+    .container{
+        max-width:750px;
+    }
+    .main__game-screen .container{
+        flex-direction: row;
+    }
+    .shop{
+        height: 580px;
+        padding-bottom: 20px;
+    }
+    .shop-inner{
+        overflow: auto
+    }
+    .shop-out{
+        height: 87%;
+    }
+}
+@media (max-width:767px) {
+    .container{
+        max-width: calc(100vw - 20px);
+    }
+    .main__game-screen .container{
+        flex-direction: column;
+        align-items: center;
+        height: 2000px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .shop{
+        height: 1020px;
+        padding-bottom: 0;
+    }
+    .shop-inner{
+        overflow: hidden;
+    }
+    .shop-out{
+        height: 920px;
+    }
+    .wrapper{
+        overflow-x: hidden;
+    }
+}
+@media (max-width:570px) {
+    .container{
+        max-width:none;
+    }
+    .wrapper{
+        overflow-x: hidden;
+    }
+
+}
+@media (max-width:360px) {
+    .container{
+        max-width:none;
+    }
+    .wrapper{
+        overflow-x: hidden;
+    }
+
+}
